@@ -1,0 +1,6 @@
+2021-09-20 02:19:06.972  INFO 14936 --- [restartedMain] c.b.a.AddressbookApplication             : Starting AddressbookApplication using Java 16.0.1 on Bhupendra with PID 14936 (B:\CLASS_PRACTICE\addressbook\target\classes started by wadek in B:\CLASS_PRACTICE\addressbook)
+2021-09-20 02:19:06.978 DEBUG 14936 --- [restartedMain] c.b.a.AddressbookApplication             : Running with Spring Boot v2.5.4, Spring v5.3.9
+2021-09-20 02:19:06.978  INFO 14936 --- [restartedMain] c.b.a.AddressbookApplication             : No active profile set, falling back to default profiles: default
+2021-09-20 02:19:08.571  WARN 14936 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-20 02:19:08.776  WARN 14936 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2021-09-20 02:19:08.808  INFO 14936 --- [restartedMain] c.b.a.AddressbookApplication             : Started AddressbookApplication in 2.152 seconds (JVM running for 2.805)
