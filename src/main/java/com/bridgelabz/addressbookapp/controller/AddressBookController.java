@@ -3,6 +3,9 @@ package com.bridgelabz.addressbookapp.controller;
 import com.bridgelabz.addressbookapp.dto.AddressBookDTO;
 import com.bridgelabz.addressbookapp.dto.ResponseDTO;
 import com.bridgelabz.addressbookapp.model.AddressBookData;
+import com.bridgelabz.addressbookapp.service.AddressBookService;
+import com.bridgelabz.addressbookapp.service.IAddressBookService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -12,6 +15,9 @@ import static org.springframework.data.jpa.domain.AbstractPersistable_.id;
 @RestController
 @RequestMapping("/book")
 public class AddressBookController {
+
+    @Autowired
+    private IAddressBookService addressBookService;
     /**
      * Get -localhost:8081/book/get
      * @return
@@ -79,15 +85,17 @@ public class AddressBookController {
 }
 
     /**
-     * Put-Delwte Call Sucess for id :1
+     *Put- localhost:8081/book/update/1
+     * @param id
      * @param addressBookDTO
      * @return
      */
 
-    @PutMapping("/update")
-    public ResponseEntity<ResponseDTO> updateAddresBookData(
+    @PutMapping("/update/{id}")
+    public ResponseEntity<ResponseDTO> updateAddresBookData(@PathVariable("id") int id,
             @RequestBody AddressBookDTO addressBookDTO){
         AddressBookData addressBookData=null;
+        addressBookData= addressBookService.updateAddressBookData(id,addressBookDTO);
         ResponseDTO respDTO=new ResponseDTO("Update AddressBook Data Succesfully ", addressBookData);
         return  new ResponseEntity<ResponseDTO>(respDTO,HttpStatus.OK);
     }
