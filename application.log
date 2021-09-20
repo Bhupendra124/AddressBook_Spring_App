@@ -4,3 +4,10 @@
 2021-09-20 02:19:08.571  WARN 14936 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2021-09-20 02:19:08.776  WARN 14936 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
 2021-09-20 02:19:08.808  INFO 14936 --- [restartedMain] c.b.a.AddressbookApplication             : Started AddressbookApplication in 2.152 seconds (JVM running for 2.805)
+2021-09-20 02:23:17.990  INFO 3288 --- [restartedMain] c.b.a.AddressbookApplication             : Starting AddressbookApplication using Java 16.0.1 on Bhupendra with PID 3288 (B:\CLASS_PRACTICE\addressbook\target\classes started by wadek in B:\CLASS_PRACTICE\addressbook)
+2021-09-20 02:23:17.990 DEBUG 3288 --- [restartedMain] c.b.a.AddressbookApplication             : Running with Spring Boot v2.5.4, Spring v5.3.9
+2021-09-20 02:23:17.990  INFO 3288 --- [restartedMain] c.b.a.AddressbookApplication             : No active profile set, falling back to default profiles: default
+2021-09-20 02:23:19.430  WARN 3288 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-20 02:23:19.639  WARN 3288 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2021-09-20 02:23:19.679  INFO 3288 --- [restartedMain] c.b.a.AddressbookApplication             : Started AddressbookApplication in 2.004 seconds (JVM running for 2.653)
+2021-09-20 07:27:47.212  WARN 3288 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5h2m898ms177µs600ns).
